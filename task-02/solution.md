@@ -8,3 +8,4 @@ be specified in a cart.I could also use the boolean datatype maybe to check whet
 off by using functions to define specific tasks, like calculating total price, number of quantites, or reading the price, or checking the expiry, etc.. I could use these functions later
 whenever necessary to perform the subsequent tasks.
  
+```
