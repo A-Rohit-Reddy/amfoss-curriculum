@@ -43,6 +43,41 @@ function para(name,deg = "Btech"){
 ```
 
 # 3. Sub Topic 3
+
+## Assignment
+
+```javascript
+let allStudents = [
+  'A',
+  'B-',
+  1,
+  4,
+  5,
+  2
+]
+
+let studentsWhoPass = [];
+let index = 0;
+
+let len = allStudents.length();
+
+for (let i = 0; i < len ; i++ ){
+    let grade = allStudents[i];
+    if (grade >= 3){
+        studentsWhoPass[index] = allStudents[i];
+        index += 1;
+    }else if (['A','A-','B','B-','C'].includes(grade)) {
+        studentsWhoPass[index] = allStudents[i]; 
+        index += 1; 
+    }else {
+        continue;
+    }
+}
+
+console.log(studentsWhoPass);
+
+``` 
+
 ## Challenge
 
 ```javascript
@@ -68,3 +103,4 @@ let triangle = (a+b>c && a+c>b && b+c>a) ? true : false ;
 I would prefer using ternary expression in this case, because it would help make my code look simpler and is also shorter than the conventional way. However, since ternary can only satisfy conditions which are either true or false, but cannot check multiple conditions together unlike in conditional way, I prefer writing my code using the conditional operators in general.Also, while using if, else if and else statements, it gives us the freedom to tweak the conditions as and however we like, unlike in ternary, which again makes the ternary statements less useful.
 
 # 4. Sub Topic 4
+
