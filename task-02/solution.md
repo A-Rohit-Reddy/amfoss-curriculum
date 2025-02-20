@@ -26,7 +26,7 @@
 # 2. Sub Topic 2
 ## Assignment
 
->```javascript 
+```javascript 
 function welcome(){
   console.log("Welcome to India !");
 }
