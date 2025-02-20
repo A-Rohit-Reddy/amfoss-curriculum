@@ -21,4 +21,24 @@
 
 ### 5. 0 and -0
 
-> O and -0 are not equal in javascript, for example, 12/0 and 12/-0 are 2 different values, pointing towards the opposite address
+> 0 and -0 are not equal in javascript, for example, 12/0 and 12/-0 are 2 different values, pointing towards the opposite address.
+
+# 2. Sub Topic 2
+## Assignment
+
+>```javascript 
+function welcome(){
+  console.log("Welcome to India !");
+}
+
+function selection(name){
+  const msg = `${name} has been selected`;
+  return msg;
+}
+
+function para(name,deg = "Btech"){
+  console.log(`${name} is currently doing ${degree}");
+}
+
+```
+
