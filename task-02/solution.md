@@ -42,3 +42,29 @@ function para(name,deg = "Btech"){
 
 ```
 
+# 3. Sub Topic 3
+## Challenge
+
+```javascript
+let a=12;
+let b=5;
+let c=13;
+let triangle;
+
+// Using logical operators
+
+if (a+b>c && a+c>b && b+c>a){
+   triangle = true;
+}else{
+   triangle = false;
+}
+
+// Using ternary operator
+
+let triangle = (a+b>c && a+c>b && b+c>a) ? true : false ;
+
+```
+
+I would prefer using ternary expression in this case, because it would help make my code look simpler and is also shorter than the conventional way. However, since ternary can only satisfy conditions which are either true or false, but cannot check multiple conditions together unlike in conditional way, I prefer writing my code using the conditional operators in general.
+
+# 4. Sub Topic 3
