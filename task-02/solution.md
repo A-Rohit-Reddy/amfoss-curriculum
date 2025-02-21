@@ -112,3 +112,13 @@ for (let i=3 ; i<20 ; i+=3){
 }
 ```
  
+## Challenge
+
+```javascript
+let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road"];
+
+for ( let element of iceCreamFlavours ){
+  log.console(element);
+}
+
+``` 
