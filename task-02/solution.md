@@ -104,3 +104,11 @@ I would prefer using ternary expression in this case, because it would help make
 
 # 4. Sub Topic 4
 
+## Assignment
+
+```javascript
+for (let i=3 ; i<20 ; i+=3){
+   log.console(i);
+}
+```
+ 
