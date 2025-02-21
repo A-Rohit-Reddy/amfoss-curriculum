@@ -108,7 +108,7 @@ I would prefer using ternary expression in this case, because it would help make
 
 ```javascript
 for (let i=3 ; i<20 ; i+=3){
-   log.console(i);
+   console.log(i);
 }
 ```
  
@@ -117,8 +117,8 @@ for (let i=3 ; i<20 ; i+=3){
 ```javascript
 let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Rocky Road"];
 
-for ( let element of iceCreamFlavours ){
-  log.console(element);
+for ( let element of iceCreamFlavors ){
+  console.log(element);
 }
 
 ``` 
