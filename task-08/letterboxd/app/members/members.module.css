@@ -1,0 +1,38 @@
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 280px;
+}
+
+.home{
+    background-color: #66FCF1;
+    margin: 50px 50px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    text-align: center;
+    font-size: 35px;
+}
+
+.body{
+    overflow: none;
+}
+
+.movies{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    column-gap: 30px;
+    margin-bottom: 70px;
+}
+
+.arrow{
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    cursor: pointer;
+}
+
+.movies:hover .arrow{
+    opacity: 0.8;
+}

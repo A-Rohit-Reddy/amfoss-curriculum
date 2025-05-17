@@ -1,0 +1,48 @@
+.container {
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .searchInput {
+    width: 1200px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .suggestions {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .suggestions li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .suggestions li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .movie-box {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .movie-box img {
+    border-radius: 10px;
+    max-height: 300px;
+  }
+  
+  .review-box {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  

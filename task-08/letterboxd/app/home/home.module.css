@@ -1,0 +1,49 @@
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 280px;
+}
+
+.body{
+    overflow: none;
+}
+
+.app{
+    overflow: none;
+}
+
+.home{
+    background-color: #66FCF1;
+    margin: 50px 50px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    text-align: center;
+    font-size: 35px;
+    font-family: karantina;
+}
+
+
+.movies{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    column-gap: 30px;
+}
+
+.arrow{
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    cursor: pointer;
+}
+
+.movies:hover .arrow{
+    opacity: 0.8;
+}
+
+.slider{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+  

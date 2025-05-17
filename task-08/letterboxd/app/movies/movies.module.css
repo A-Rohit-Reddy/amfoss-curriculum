@@ -1,0 +1,56 @@
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 280px;
+}
+
+.body{
+    overflow: none;
+}
+
+.home{
+    background-color: #66FCF1;
+    margin: 50px 50px;
+    border-radius: 30px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    text-align: center;
+    font-size: 35px;
+}
+
+.filterBy{
+    height: 60px;
+    width: 192px;
+    background-color: #66FCF1;
+    color: #022541;
+    font-size: 18px;
+    font-family: kavoon;
+    border-radius: 90px;
+}
+
+.filterBy:active{
+    background-color: #022541;
+    color: #66FCF1;
+    border: 5px solid #66FCF1;
+    cursor: pointer;
+}
+
+
+.movies{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    column-gap: 30px;
+}
+
+.arrow{
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    cursor: pointer;
+}
+
+.movies:hover .arrow{
+    opacity: 0.8;
+}

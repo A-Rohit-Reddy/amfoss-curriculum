@@ -1,0 +1,30 @@
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 280px;
+}
+
+.home{
+    margin: 30px 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #66FCF1;
+}
+
+.buttons{
+    background-color: #011216;
+    height: 100px;
+    color: #66FCF1;
+    width: 450px;
+    font-family: karantina;
+    font-size: 50px;
+    margin: 20px 40px;
+    border-radius: 50px;
+}
+
+.buttons:hover{
+    height: 110px;
+    width: 460px;
+    opacity: 0.9;
+}

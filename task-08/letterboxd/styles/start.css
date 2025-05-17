@@ -1,0 +1,48 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+  }
+    
+#buttons{
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  align-items: center;
+  flex-direction: column;
+}  
+
+body{
+  overflow: hidden;
+}
+
+.buttonStyle{
+  height: 120px;
+  border: 4px solid #66FCF1;
+  border-radius: 25px;
+  margin-bottom: 60px ;
+  width: 400px;
+  background-color: transparent;
+  font-size: 35px;
+  color: #66FCF1;
+  font-family: kavoon;
+  box-shadow: 6px #66FCF1;
+}
+
+.buttonStyle:hover{
+  background-color: #66FCF1;
+  color: #022541;
+  box-shadow:  6px #022541;
+}
+.buttonStyle:active{
+  background-color: #66FCF1;
+  color: #022541;
+  box-shadow:  6px #022541;
+  opacity: 0.8;
+}
+
+.header1{
+  text-align: center;
+  font-size: 35px;
+  color: #66FCF1;
+  font-family: kavoon;
+}

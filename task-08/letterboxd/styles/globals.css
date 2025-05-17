@@ -1,0 +1,33 @@
+.app{
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  overflow: auto;
+}
+
+.body{
+  overflow: auto;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #0B0C10; /* Very dark base */
+    position: relative;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 500px;
+    background: radial-gradient(ellipse at center, #03337b 100%);
+    transform: translate(-50%, -50%) rotate(-40deg); /* Tilt to match diagonal center */
+    filter: blur(150px);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+  }
+

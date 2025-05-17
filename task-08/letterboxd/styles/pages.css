@@ -1,0 +1,22 @@
+.button{
+    width: 240px;
+    height: 85px;
+    color: #66FCF1;
+    background-color: transparent;
+    border: 5px solid #66FCF1;
+    font-size: 45px;
+    font-family: karantina;
+}
+
+.button:hover{
+    background-color: #66FCF1;
+    color: #022541;
+    border: 5px solid #022541;
+}
+
+.button:active{
+    background-color: #66FCF1;
+    color: #022541;
+    box-shadow:  6px #022541;
+    opacity: 0.8;
+  }

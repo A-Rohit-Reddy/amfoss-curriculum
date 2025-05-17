@@ -1,0 +1,43 @@
+.loginHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.signUp{
+    background-color: transparent;
+    height: 70px;
+    border: 4px solid #66FCF1;
+    width: 280px;
+    background-color: transparent;
+    font-size: 40px;
+    color: #66FCF1;
+    font-family: kavoon;
+}
+
+.signUp:hover{
+    background-color: #66FCF1;
+    color: #022541;
+    border: 4px solid #022541;
+}
+
+.signUp:active{
+    background-color: #66FCF1;
+    color: #022541;
+    box-shadow:  6px #022541;
+    opacity: 0.8;
+  }
+
+.change{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    flex: 1;
+    justify-content: center;
+    font-size: 30px;
+    color: #66FCF1;
+    margin-left: 200px;
+}
