@@ -5,6 +5,10 @@ import '../widgets/background.dart';  // Import your background widget
 import './details_page.dart';
 import './search_page.dart';
 import './all_pokemon_page.dart';
+import './user_pokemon_page.dart';
+import '../services/auth_service.dart';
+import './silhoutte_game_page.dart';
+import './start_page.dart';
 
 
 class PokedexHomePage extends StatefulWidget {
@@ -23,16 +27,31 @@ class _HomePageState extends State<PokedexHomePage> {
     _pokemonList = PokeApi.fetchPokemonList();
   }
 
+  Future<void> _handleLogout() async {
+    await AuthService.logout();
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage()));  // or navigate to your login page widget
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      backgroundColor: Colors.transparent,  // Make scaffold background transparent
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
         title: const Text('Pokédex', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.transparent,
         elevation: 0,
         actions: [
+          IconButton(
+            icon: const Icon(Icons.pets, color: Colors.white),
+            tooltip: 'My Pokémon',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const UserPokemonPage()),
+              );
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.search, color: Colors.white),
             tooltip: 'Search Pokémon',
@@ -53,6 +72,21 @@ class _HomePageState extends State<PokedexHomePage> {
               );
             },
           ),
+          IconButton(
+            icon: const Icon(Icons.logout, color: Colors.white),
+            tooltip: 'Logout',
+            onPressed: _handleLogout,
+          ),
+          FloatingActionButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SilhouetteGamePage()),
+              );
+            },
+            child: const Icon(Icons.help, color: Colors.white),
+            backgroundColor: Colors.transparent,
+          )
         ],
       ),
 

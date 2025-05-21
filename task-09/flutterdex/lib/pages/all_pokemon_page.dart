@@ -37,7 +37,7 @@ class _AllPokemonPageState extends State<AllPokemonPage> {
       if (_filterType != 'All') {
         filtered = filtered.where((p) {
           final types = p['types'] as List;
-          return types.contains(_filterType.toLowerCase());
+          return types.any((t) => t.toString().toLowerCase() == _filterType.toLowerCase());
         }).toList();
       }
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../pages/home_page.dart';
 import '../services/auth_service.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SignInForm extends StatefulWidget {
   const SignInForm({super.key});
@@ -38,6 +39,9 @@ class _SignInFormState extends State<SignInForm> {
       });
 
       if (success) {
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setString('email', email);
+        print('Saved email to SharedPreferences: $email');
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (_) => const PokedexHomePage()),
